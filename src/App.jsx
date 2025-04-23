@@ -1,10 +1,11 @@
 import './App.css'
+import Root from './components/Root'
 
 function App() {
 
   return (
     <div>
-      <h1> I'm From Programming Shikhbo Platform </h1>
+      <Root />
     </div>
   )
 }
