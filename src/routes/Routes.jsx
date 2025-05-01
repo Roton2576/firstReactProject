@@ -1,10 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./Root";
-import Home from "./Home";
-import Products from "./Products";
-import Blogs from "./Blogs";
-import Contact from "./Contact";
-import About from "./About";
+import Root from "../components/layout/Root";
+import Home from "../components/pages/Home"
+import Products from "../components/pages/Products"
+import Blogs from "../components/pages/Blogs"
+import Contact from "../components/pages/Contact"
+import About from "../components/pages/About"
+import Login from "../components/auth/Login"
+import Register from "../components/auth/Register"
+
 
 const router = createBrowserRouter([
      {
@@ -30,6 +33,14 @@ const router = createBrowserRouter([
                {
                     path: 'about',
                     Component: About
+               },
+               {
+                    path: 'login',
+                    Component: Login
+               },
+               {
+                    path: 'register',
+                    Component: Register
                }
           ] 
      }
